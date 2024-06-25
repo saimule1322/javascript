@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let hero = ["ironman","thor","hulk","captainamerica","blackwidow","thanos"];
+         document.write("before : " + hero +"<br>")
+         hero.sort();
+         document.write("after : " + hero +"<br>")
+         let nums =[10,9,5,4,12,13,15]
+         nums.sort()
+         document.write("after : " + nums +"<br>")
+         nums.sort(function(a,b){return a-b});
+         document.write("after using functions : " + nums +"<br>")
+    </script>
+</body>
+</html>
