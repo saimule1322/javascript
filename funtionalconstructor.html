@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(firstname ,lastname,city){
+            this.firstname=firstname
+            this.lastname=lastname
+            this.city=city
+        }
+        let p1 = new person("sai","mule","kanigiri")
+        let p2 = new person("rohit","sharma","mumbai")
+        let p3 = new person("virat","kohli","banglore")
+        let p4 = new person("ms","dhoni","chennai")
+          let arr=[p1,p2,p3,p4]
+          for(let a of arr){ // to access elements in an array
+            for(let key in a)// to access key values 
+            {
+                document.write(key + " : " + a[key]+"<br>")
+            }
+            document.write("<br>")
+          }
+         
+
+    </script>
+</body>
+</html>

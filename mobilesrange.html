@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function mobile(mobilename ,price,company,RAM,){
+        this.mobilename=mobilename
+        this.price=price
+        this.company=company
+        this.RAM=RAM
+    }
+    let p1 = new mobile("oneplus nordce2","18000","Oneplus","16gb")
+    let p2 = new mobile("oneplus nordce3","28000","Oneplus","16gb")
+    let p3 = new mobile("Samsung galaxy10","40000","samsung","32gb")
+    let p4 = new mobile("iphone 15pro","60000","apple","8gb")
+      let arr=[p1,p2,p3,p4]
+      for(let a of arr){ // to access elements in an array
+        if(a.price>30000){
+        for(let key in a)// to access key values 
+        {
+            document.write(key + " : " + a[key]+"<br>")
+        }
+        document.write("<br>")
+      }
+      }
+    </script>
+    
+</body>
+</html>
